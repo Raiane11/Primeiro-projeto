@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Tragetória</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <header><!--Tag para indicar ao navegador onde está o cabeçalho. -->
+            <div>
+                <h1>Sobre<span class="sobremim">Mim</span></h1><!--Utilizei o span para deixar o elemento em linha.-->
+            </div>
+        
+          <div id="Home"><!--Tag usada para o estilo e para posicionar objetos.-->
+                <nav><!-- tag para quando o mouse passar por cima da palavra -->
+                    <a href="#home">Home</a>
+                    <a href="#caixa2">Hobbies</a>
+                    <a href="#caixa4">Lugar Favorito</a>
+                    <a href="#caixa3">Formulário</a>
+                </nav>
+           </div>
+        </header>
+
+        <section id="home"><!--Section usei para marcar as seções de conteúdo.-->
+            <div class="caixa1"><!--Div utilizada como uma classe.-->
+
+                <img class="img" src="Picsart_22-10-08_19-42-13-791~2.jpg"><!--Tag de imagem.-->
+
+                <p class="paragrafo">Raiane Gomes da Silva</p>
+
+                <p class="paragrafo1">" Olá! Me chamo Raiane e tenho 22 anos. Nascida e criada no Rio de Janeiro, especificamente no conjunto de favelas do Complexo da Maré. Amo o lugar de onde vim. Embora eu seja carioca, sou filha de pais nordestinos. Comecei a trabalhar aos meus 19 anos e 1 ano depois acabei entrando para a faculdade de Ciências Ambientais. Foi uma luta ter que trabalhar e estudar, mas consegui por um tempo. Bom, depois que percebi que não estava mais gostando do meu local de trabalho, decidi investir em meu próprio negócio. Foi aí que iniciei minha jornada em Consertos de Smartphones. Acredite, nada na vida é fácil. Se está fácil é porque tem algo de errado. Mas como eu adoro um bom desafio, passei por cima das dificuldades e hoje posso dizer que estou bem melhor do que no começo. Conheci a áre de T.I através de conteúdos na internet mesmo. Fui a fundo entender melhor sobre essa área e acabei gostando muito. Entrei em cursos para entender os conteúdos e com muita dificuldade acabei entendendo. Hoje estou nesse projeto da Prefeitura com intuito de me especializar. Será um futuro bem promissor e espero aproveitar cada segundo dessa jornada." 
+                </p>
+            </div>
+        </section>
+
+
+        <section id="hobbies">
+            <div id="caixa2">
+
+                <h2>Hobbies:</h2>
+
+                <div class="paragrafo2"><!--Dentro de div id, usei as divs de classe.-->
+                    <p>Escutar música enquanto faço alguma tarefa. Mesmo as mais importantes. Consigo me concentrar mesmo com vozes e instrumentos na minha mente.</p>
+                </div>
+
+                <div class="paragrafo3">
+                    <p>Assistir séries e filmes. Sou apaixonada! Sempre que tenho tempo, uso para me entreter com lançamentos novos.</p>
+                </div>
+
+                <div class="paragrafo4">
+                    <p>Gosto de praticar atividades físicas em alguns dias da semana. Acho essencial.</p>
+                </div>
+
+                <div class="paragrafo5">
+                    <p>Não sou criativa, mas pinto uns quadros para passar o tempo. </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="lugar">
+            <div id="caixa4">
+
+                <h2>Lugar Favorito:</h2>
+
+                <p class="paragrafo6">
+                Estive pela primeira vez na cachoeira do Horto em 2021 através de atividades que eu desenvovlia para a faculdade. Acabou se tornou um dos meus lugares favoritos que eu gosto de estar visitando sempre que possível. É um lugar bastante atrativo e que também está rodeado pela natureza. Fica localizado na floresta da Tijuca. É a cachoeira de melhor acesso e de fácil localização.
+                </p>
+
+                <img class="img1" src="cachoeiras-do-Horto-no-Rio-de-Janeiro-14.webp">
+
+            </div>
+        </section>
+
+        
+        <section id="formulario">
+            <div id="caixa3">
+                    <form action="form"><!--Aqui utilizei a tag de formulário e um atributo, o action. Para que os dados recolhidos sejam enviados.-->
+                        <div class="form">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" required maxlength="25" minlength="4">
+                        </div>
+
+                        <div class="form">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email"required maxlength="50" >
+                        </div>
+
+                        <div class="form">
+                            <label for="contato">Contato:</label>
+                            <input type="contato" id="contato" required maxlength="50">
+                        </div>
+
+                        <div class="form">
+                            <label for="textAreaMensagem">Mensagem:</label>
+                            <textarea name="textAreaMensagem" id="textAreaMensagem" required maxlength="100"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="botao">Enviar</button>
+                    </form>
+            </div>
+        </section>
+    </body>
+</html>
